@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>QuaranCODE-Home</title>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="/js/bootstrap.js"></script>
+    <script src="/js/jquery-3.3.1.slim.min.js"></script>
+    <script src="/js/popper.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 offset-2">
+                <div class="card">
+                    <div class="card-title">
+                        <a href="../index.html"><button class="back">Back</button></a>
+                        <h1 class="display-1">Student Grade Evaluator</h1>
+                        <br>
+                        <h3>Student Name <br><input type="text" placeholder="Name"></h3>
+                    </div>
+                    <div class="card-body">
+                        <h3>List of Subjects</h3>
+                        <table class="table">
+                            <th>Subject Title</th>
+                            <th>Grade</th>
+                            <th>Remarks</th>
+                            <tr>
+                                <td>Math</td>
+                                <td><input type="number" placeholder="input data"></td>
+                                <td><p>EVALUATION</p></td>
+                            </tr>
+                            <tr>
+                                <td>Science</td>
+                                <td><input type="number" placeholder="input data"></td>
+                                <td><p>EVALUATION</p></td>
+                            </tr>
+                            <tr>
+                                <td>English</td>
+                                <td><input type="number" placeholder="input data"></td>
+                                <td><p>EVALUATION</p></td>
+                            </tr>
+                            <tr>
+                                <td>Filipino</td>
+                                <td><input type="number" placeholder="input data"></td>
+                                <td><p>EVALUATION</p></td>
+                            </tr>
+                            <tr>
+                                <td>P.E.</td>
+                                <td><input type="number" placeholder="input data"></td>
+                                <td><p>EVALUATION</p></td>
+                            </tr>
+                            
+                        </table>
+                    </div>
+                    <div class="card-footer">
+                        <h3 >Student Rank</h3>
+                        <button onclick="eva()" id="evaluate">EVALUATE</button>
+                        <a class="col-md-8" href="#"><h3 id="rank">?</h3></a>
+                    </div>
+                    
+                   
+                </div>
+                <div class="link">
+                    <div class="row">
+                        <div class="row-offset-4">
+                            <div class="card2">
+                                <a class="bottom1" href="https://web.facebook.com/" type="button"><img src="../images/facebook.png" alt="" height="50" width="50px"></a>
+                            </div>
+                        </div>
+                        <div class="row-offset-4">
+                            <div class="card2">
+                                <a class="bottom2" href="https://www.instagram.com/" type="button"><img src="../images/instagram.png" alt="" height="50" width="50px"></a>
+                            </div>
+                        </div>
+                        <div class="row-offset-4">
+                            <div class="card2">
+                                <a class="bottom3" href="https://twitter.com/" type="button"><img src="../images/twitter.png" alt="" height="50" width="50px"></a>
+                            </div>
+                        </div>
+
+                    </div>
+                   
+                </div>
+            </div>
+      
+        </div>
+    </div>
+</body>
+
+
+<script>function eva(){
+    var grade1 = document.getElementsByTagName('input')[1].value;
+    if (grade1 >=95 && grade1 <=100){
+        document.getElementsByTagName('p')[0].textContent = "EXCELLENT";
+    }
+    else if (grade1 >= 90 && grade1 <=94)
+    {
+        document.getElementsByTagName('p')[0].textContent = "VERY SATISFACTORY";
+    }
+    else if (grade1 >= 80 && grade1 <=89)
+    {
+        document.getElementsByTagName('p')[0].textContent = "SATISFACTORY";
+    }
+    else if (grade1 >= 75 && grade1 <=79)
+    {
+        document.getElementsByTagName('p')[0].textContent = "POOR";
+    }
+    else if (grade1 >= 60 && grade1 <=74)
+    {
+        document.getElementsByTagName('p')[0].textContent = "FAILED";
+    }
+    else
+    {
+        document.getElementsByTagName('p')[0].textContent = "NO GRADE";
+    }
+
+    var grade2 = document.getElementsByTagName('input')[2].value;
+    if (grade2 >=95 && grade2 <=100){
+        document.getElementsByTagName('p')[1].textContent = "EXCELLENT";
+    }
+    else if (grade2 >= 90 && grade2 <=94)
+    {
+        document.getElementsByTagName('p')[1].textContent = "VERY SATISFACTORY";
+    }
+    else if (grade2 >= 80 && grade2 <=89)
+    {
+        document.getElementsByTagName('p')[1].textContent = "SATISFACTORY";
+    }
+    else if (grade2 >= 75 && grade2 <=79)
+    {
+        document.getElementsByTagName('p')[1].textContent = "POOR";
+    }
+    else if (grade2 >= 60 && grade2 <=74)
+    {
+        document.getElementsByTagName('p')[1].textContent = "FAILED";
+    }
+    else
+    {
+        document.getElementsByTagName('p')[1].textContent = "NO GRADE";
+    }
+
+    var grade3 = document.getElementsByTagName('input')[3].value;
+    if (grade3 >=95 && grade3 <=100){
+        document.getElementsByTagName('p')[2].textContent = "EXCELLENT";
+    }
+    else if (grade3 >= 90 && grade3 <=94)
+    {
+        document.getElementsByTagName('p')[2].textContent = "VERY SATISFACTORY";
+    }
+    else if (grade3 >= 80 && grade3 <=89)
+    {
+        document.getElementsByTagName('p')[2].textContent = "SATISFACTORY";
+    }
+    else if (grade3 >= 75 && grade3 <=79)
+    {
+        document.getElementsByTagName('p')[2].textContent = "POOR";
+    }
+    else if (grade3 >= 60 && grade3 <=74)
+    {
+        document.getElementsByTagName('p')[2].textContent = "FAILED";
+    }
+    else
+    {
+        document.getElementsByTagName('p')[2].textContent = "NO GRADE";
+    }
+
+    var grade4 = document.getElementsByTagName('input')[4].value;
+    if (grade4 >=95 && grade4 <=100){
+        document.getElementsByTagName('p')[3].textContent = "EXCELLENT";
+    }
+    else if (grade4 >= 90 && grade4 <=94)
+    {
+        document.getElementsByTagName('p')[3].textContent = "VERY SATISFACTORY";
+    }
+    else if (grade4 >= 80 && grade4 <=89)
+    {
+        document.getElementsByTagName('p')[3].textContent = "SATISFACTORY";
+    }
+    else if (grade4 >= 75 && grade4 <=79)
+    {
+        document.getElementsByTagName('p')[3].textContent = "POOR";
+    }
+    else if (grade4 >= 60 && grade4 <=74)
+    {
+        document.getElementsByTagName('p')[3].textContent = "FAILED";
+    }
+    else
+    {
+        document.getElementsByTagName('p')[3].textContent = "NO GRADE";
+    }
+
+    var grade5 = document.getElementsByTagName('input')[5].value;
+    if (grade5 >=95 && grade5 <=100){
+        document.getElementsByTagName('p')[4].textContent = "EXCELLENT";
+    }
+    else if (grade5 >= 90 && grade5 <=94)
+    {
+        document.getElementsByTagName('p')[4].textContent = "VERY SATISFACTORY";
+    }
+    else if (grade5 >= 80 && grade5 <=89)
+    {
+        document.getElementsByTagName('p')[4].textContent = "SATISFACTORY";
+    }
+    else if (grade5 >= 75 && grade5 <=79)
+    {
+        document.getElementsByTagName('p')[4].textContent = "POOR";
+    }
+    else if (grade5 >= 60 && grade5 <=74)
+    {
+        document.getElementsByTagName('p')[4].textContent = "FAILED";
+    }
+    else
+    {
+        document.getElementsByTagName('p')[4].textContent = "NO GRADE";
+    }
+    /**Ranking */
+    if (grade1 && grade2 && grade3 && grade4 && grade5 >= 90 && grade1 && grade2 && grade3 && grade4 && grade5 >= 100)
+    {
+        document.querySelector("#rank").textContent = "Honor Student";
+    }
+    else if (grade1 && grade2 && grade3 && grade4 && grade5 >=80  && grade1 && grade2 && grade3 && grade4 && grade5 >= 89)
+    {
+        document.querySelector("#rank").textContent = "Achiever";
+    }
+    else if (grade1 && grade2 && grade3 && grade4 && grade5 >= 75 && grade1 && grade2 && grade3 && grade4 && grade5 >= 79)
+    {
+        document.querySelector("#rank").textContent = "Passed";
+    }
+    else if (grade1 && grade2 && grade3 && grade4 && grade5 >= 60 && grade1 && grade2 && grade3 && grade4 && grade5 >= 74)
+    {
+        document.querySelector("#rank").textContent = "Repeater";
+    }
+    else
+    {
+        document.querySelector("#rank").textContent = "Incomplete";
+    }
+
+}</script>
+</html>

@@ -1,0 +1,250 @@
+*{
+    margin: 0;
+    padding: 0;
+   
+}
+body{
+    background: linear-gradient(rgba(255, 255, 255, 0.10), rgba(255,255,255,0.10)), url(../images/bg-img.png), no-repeat;
+    background-size: cover;
+    background-position: center;
+  
+}
+@font-face{
+    src: url(/fonts/PALSCRI.TTF);
+    font-family: palacescript;
+}
+@font-face{
+    src: url(/fonts/PARCHM.TTF);
+    font-family: parchment;
+}
+@font-face{
+    src: url(/fonts/Arkhip_font.ttf);
+    font-family: Arkhip_font;
+}
+@font-face{
+    src: url(../fonts/Montserrat-Light.ttf);
+    font-family: Montserrat-Light;
+}
+@font-face{
+    src: url(../fonts/MunichRegular-Y8x4.ttf);
+    font-family: Munich-Regular;
+}
+@font-face{
+    src: url(../fonts/Odachi\ 400.otf);
+    font-family: Odachi;
+}
+@font-face{
+    src: url(../fonts/sample.otf);
+    font-family: sample;
+}
+@font-face{
+    src: url(../fonts/SketchFlow\ Print.ttf);
+    font-family: SketchFlow;
+}
+@font-face{
+    src: url(../fonts/Sacramento-Regular.ttf);
+    font-family: Sacramento;
+}
+@font-face{
+    src: url(../fonts/Montserrat-Light.ttf);
+    font-family: Montserrat-Light;
+}
+@font-face{
+    src: url(../fonts/Montserrat-SemiBold.ttf);
+    font-family: Montserrat-Semibold;
+}
+.card{
+    color: black;
+    display: flex;
+    padding: 20px 50px;
+    background: linear-gradient(rgba(4, 148, 173, 0.6), rgba(1, 90, 94, 0.6));
+    margin-bottom: 2rem;
+    box-shadow:  10px 10px 15px rgb(105, 233, 233), 
+    2px 2px 15px rgb(105, 233, 233),
+    inset 2px 2px 1px rgb(105, 233, 233),
+    10px 2px 12px rgb(105, 233, 233);
+    
+
+
+}
+.col-md-8{
+    animation: transitionIn 0.90s;
+}
+@keyframes transitionIn{
+    from{
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    
+    to{
+        opacity: 1;
+        transform: translateY(1px);
+    }
+}
+.table{
+    border-radius: 2px;
+    text-align: center;
+    box-shadow:  0px 0px 0px rgb(105, 233, 233), 
+    0px 0px 0px rgb(105, 233, 233),
+    inset 0px 0px 1px rgb(105, 233, 233),
+    10px 2px 12px rgb(105, 233, 233);
+    border-color: rgb(105, 233, 233);
+    border-width: 0em;
+    background-color: transparent;
+}
+#evaluate{
+    position: relative;
+    display: inline-block;
+    margin-top: 5%;
+    padding: 10px 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 500px;
+    letter-spacing: 2px;
+    background-color:rgb(105, 233, 233, 0.2);
+    color: black;
+    border-radius: 40px;
+    font-size: 18px;
+    box-shadow: 
+    -2px -2px 10px 0 rgb(105, 233, 233, 0.5), 
+    2px 2px 10px 0 rgb(105, 233, 233, 0.5),
+    inset -2px -2px 4px 0 rgb(105, 233, 233, 0.1),
+    10px 10px 6px 0 rgb(105, 233, 233, 0.15);
+    
+    cursor: pointer;
+    transition: all 100ms;
+    font-family: 'Times New Roman', Times, serif;
+}
+#evaluate:hover{
+    transform: scale(0.98);
+    border-radius: 40px;
+    box-shadow: -2px -2px 9px rgb(105, 233, 233, 0.5), 
+    2px 2px 9px rgb(105, 233, 233, 0.5),
+    inset 2px 2px 9px rgb(105, 233, 233, 0.1),
+    2px 2px 2px rgb(105, 233, 233, 0.15);
+    
+}
+h1{
+    font-family: sample;
+    text-shadow: 12px 12px 10px teal;
+}
+input{
+    color: white;
+    border-radius: 25px;
+    box-shadow: none;
+    border-color: none;
+    border-width: 0.5px;
+    background-color: transparent;
+    box-shadow: -2px -2px 9px rgb(105, 233, 233, 0.5), 
+    2px 2px 9px rgb(105, 233, 233, 0.5),
+    inset 2px 2px 9px rgb(105, 233, 233, 0.5),
+    2px 2px 2px rgb(105, 233, 233, 0.5);
+    padding-left: 20px;
+    padding-top: 3px;
+    padding-bottom: 5px;
+}
+input::placeholder{
+    font-style: italic;
+}
+th, tr{
+    border-radius: 5px;
+}
+#rank{
+    border-radius: 7px;
+    height: 50px;
+    width: 50%;
+    float: right;
+    padding: 1%;
+    padding-bottom: 15%;
+    margin-right: 10%;
+    box-shadow: -2px -2px 9px rgb(105, 233, 233, 0.5), 
+    2px 2px 9px rgb(105, 233, 233, 0.5),
+    inset 2px 10px 9px rgb(105, 233, 233, 0.5),
+    10px 10px 10px rgb(105, 233, 233, 0.5);
+    margin-bottom: 0;
+    text-align: center;
+    font-family: parchment;
+    font-size: 65px;
+    color: black;
+    text-shadow: 5px 5px 5px gold;
+}
+h3{
+    margin-bottom: 0.0rem;
+}
+#award{
+    text-align: left;
+    margin-right: 0%;
+}
+.back{
+    padding: 10px 30px;
+    float: right;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 500px;
+    letter-spacing: 2px;
+    background-color: rgb(105, 233, 233, 0.5);
+    border-radius: 40px;
+    font-size: 18px;
+    box-shadow: 
+    -2px -2px 10px rgb(105, 233, 233, 0.5), 
+    -2px -2px 12px rgb(105, 233, 233, 0.5),
+    inset 2px 2px 4px rgb(105, 233, 233, 0.5),
+    10px 10px 6px rgb(105, 233, 233, 0.5);
+    
+    cursor: pointer;
+    transition: all 100ms;
+    font-family: 'Times New Roman', Times, serif;
+}
+.back:hover{
+    transform: scale(0.98);
+    border-radius: 40px;
+    box-shadow: -2px -2px 9px rgb(105, 233, 233, 0.5), 
+    2px 2px 9px rgb(105, 233, 233, 0.5),
+    inset 2px 2px 9px rgb(105, 233, 233, 0.5),
+    2px 2px 2px rgb(105, 233, 233, 0.5);
+}
+.bottom1{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 70px;
+    background: url(../images/facebook.png);
+}
+.bottom2{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 70px;
+    background-image: url(../images/instagram.png);
+    float: right;
+}
+.bottom3{
+    width: 50px;
+    height: 50px;
+    border-radius: 70px;
+    background: url(../images/twitter.png);
+    float: right;
+}
+.card2{
+    color: black;
+    display: flex;
+    padding: 20px 50px;
+    background: linear-gradient(rgba(4, 148, 173, 0.6), rgba(1, 90, 94, 0.6));
+    margin-bottom: 5rem;
+    box-shadow:  10px 10px 15px rgb(105, 233, 233), 
+    2px 2px 15px rgb(105, 233, 233),
+    inset 2px 2px 1px rgb(105, 233, 233),
+    10px 2px 12px rgb(105, 233, 233);
+    border-radius: 70px;
+    background-color: rgb(105, 233, 233, 0.5);
+    margin-left: 60px;
+    margin-right: 30px;
+    
+}
+.card2:hover{
+    transform: scale(0.95);
+    border-radius: 40px;
+    box-shadow: -2px -2px 9px rgb(105, 233, 233, 0.5), 
+    2px 2px 9px rgb(105, 233, 233, 0.5),
+    inset 2px 2px 9px rgb(105, 233, 233, 0.5),
+    2px 2px 2px rgb(105, 233, 233, 0.5);
+}
+
